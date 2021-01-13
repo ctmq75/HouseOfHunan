@@ -2,4 +2,37 @@ $main-color: maroon;
 
 #nav {
     background-color: $main-color;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+}
+
+#characters {
+    width: 8em;
+    height: auto;
+    //float: right;
+}
+
+#navLinks {
+    list-style-type: none;
+    margin: .2em auto;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 1.5em 2em;
+    border: 1px solid grey;
+
+
+}
+#navLinks a:hover {
+    color: white;
+    background-color: rgb(102, 102, 59);
+
+    
+}
+
+@media screen and (max-width: 44em) {
+
 }

@@ -1,12 +1,27 @@
-import logo from './logo.svg';
+import { Route, BrowserRouter } from "react-router-dom";
 import './App.css';
+import Nav from './components/Nav/Nav.js'
+import Footer from './components/Footer/Footer'
+import About from './components/About/About.js'
+import Home from './components/Home/Home'
+import Location from './components/Location/Location'
+
 
 function App() {
   return (
     <div className="App">
-      House of Hunan
+    <BrowserRouter>
+      <Nav />
+      <Route exact path='/' component={Home} />
+      <Route exact path="/about" component={About} />
+      <Footer />
+    </BrowserRouter>
     </div>
   );
 }
 
 export default App;
+
+
+// <Route exact path='/location' component={Location} />
+
