@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
+import { Document } from 'react-pdf'
 
 export class Menu extends Component {
     render() {
         return (
             <div>
-                <iframe src="/BlocCertificate.pdf" width="100%" height="500px">
-                </iframe>
+                <Document file="..." />
             </div>
         )
     }
