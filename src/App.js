@@ -5,7 +5,7 @@ import Footer from './components/Footer/Footer'
 import About from './components/About/About.js'
 import Home from './components/Home/Home'
 import Location from './components/Location/Location'
-
+import Menu from './components/Menu/Menu'
 
 function App() {
   return (
@@ -15,6 +15,8 @@ function App() {
       <Route exact path='/' component={Home} />
       <Route exact path="/about" component={About} />
       <Route exact path='/location' component={Location} />
+      <Route exact path="/menu" component={Menu} />
+
       <Footer />
     </BrowserRouter>
     </div>
