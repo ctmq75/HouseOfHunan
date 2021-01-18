@@ -24,9 +24,6 @@ const Navbar = () => {
           <NavLink to='/location' activeStyle>
             Location
           </NavLink>
-          <NavLink to='/galley' activeStyle>
-            Gallery
-          </NavLink>
           <NavLink to='/reviews' activeStyle>
             Reviews
           </NavLink>

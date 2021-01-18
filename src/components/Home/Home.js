@@ -1,15 +1,19 @@
 import React from "react";
 import "./Home.scss";
+import BackgroundSlider from 'react-background-slider'
 import hunan1 from "../images/hunan1.jpg";
-import { Document, Page } from "react-pdf";
+import image1 from '../images/rice.jpg'
+import image2 from '../images/wok.jpg'
+import image3 from '../images/soup.jpg'
 
 
 
 function Home() {
   return (
     <div id="home">
-        <h1></h1>
-
+        <BackgroundSlider
+  images={[image1, image2, image3]}
+  duration={6} transition={3} />
     </div>
   );
 }
