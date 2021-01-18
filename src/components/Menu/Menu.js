@@ -11,14 +11,15 @@ export class Menu extends Component {
   render() {
     return (
       <div id='menu-screen'>
-        <button>
-          <a href={HunanMenu} target="_blank">
-            View/Download Menu
-          </a>
-        </button>
+
+        <section id='menu-images'>
+        <a href={HunanMenu} rel="noreferrer" target="_blank">
+
         <img className="menuPages" src={menu1} alt="menu page" />
         <img className="menuPages" src={menu2} alt="menu page" />
         <img className="menuPages" src={menu3} alt="menu page" />
+        </a>
+        </section>
       </div>
     );
   }

@@ -33,17 +33,7 @@ export class Location extends Component {
       };
     return (
       <div id='mapContainer'>
-          <span>
-              <p>lorem ipsum bullshit words here </p>
-              <ul>
-                  <li>test</li>
-                  <li>shit</li>
-                  <li>goes</li>
-                  <li>right</li>
-                  <li>here</li>
-              </ul>
-          </span>
-          <span id='map'>
+        <div>
         <Map
           google={this.props.google}
           zoom={14}
@@ -74,7 +64,7 @@ export class Location extends Component {
             </div>
           </InfoWindow>
         </Map>
-        </span>
+        </div>
       </div>
     );
   }

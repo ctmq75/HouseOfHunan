@@ -1,46 +1,58 @@
 import React from "react";
+import { Navbar,Nav,NavDropdown,Form,FormControl,Button } from 'react-bootstrap'
 import "./Nav.scss";
-import Hunan_Characters from './Hunan_Characters.svg.png'
 
-class Nav extends React.Component {
+class Navigation extends React.Component {
    
   render() {
     return (
       <div id="nav">
-        <span>
+        <div id='nav-title'>
           <h1>House of Hunan</h1>
-        </span>
-        <span>
-           <img id='characters' src={Hunan_Characters} alt='Hunan in Chinese Characters' ></img>
-        </span>
-        <span>
           <ul id='navLinks'>
             <li>
-              <a href="/">Home</a>
+              <a href="/"><button>Home</button></a>
             </li>
             <li>
-              <a href="/menu">Menu</a>
+              <a href="/menu"><button>Menu</button></a>
             </li>
             <li>
-              <a href="/location">Location</a>
+              <a href="/location"><button>Location</button></a>
             </li>
             <li>
-              <a href="#">Gallery</a>
+              <a href="#"><button>Gallery</button></a>
             </li>
             <li>
-              <a href="#">Reviews</a>
+              <a href="#"><button>Reviews</button></a>
             </li>
             <li>
-              <a href="/about">About Us</a>
+              <a href="/about"><button>About Us</button></a>
             </li>
             <li>
-              <a href="https://www.beyondmenu.com/20070/chicago/house-of-hunan-chicago-60614.aspx?utm_source=satellite&utm_medium=home_order&pk_vid=446aae97154b03021610492576aa0265">Order Online</a>
+              <a href="https://www.beyondmenu.com/20070/chicago/house-of-hunan-chicago-60614.aspx?utm_source=satellite&utm_medium=home_order&pk_vid=446aae97154b03021610492576aa0265"><button>Order Online</button></a>
             </li>
           </ul>
-        </span>
+
+        </div>
+        <>
+  <Navbar bg="dark" variant="dark">
+    <Navbar.Brand href="#home">House of Hunan</Navbar.Brand>
+    <Nav className="mr-auto">
+      <Nav.Link href="#home">Home</Nav.Link>
+      <Nav.Link href="#features">Features</Nav.Link>
+      <Nav.Link href="#pricing">Pricing</Nav.Link>
+    </Nav>
+    <Form inline>
+      <FormControl type="text" placeholder="Search" className="mr-sm-2" />
+      <Button variant="outline-info">Search</Button>
+    </Form>
+  </Navbar>
+
+</>
+
       </div>
     );
   }
 }
 
-export default Nav;
+export default Navigation;
