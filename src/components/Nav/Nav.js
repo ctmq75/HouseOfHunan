@@ -29,7 +29,7 @@ class Navigation extends React.Component {
               <a href="/about"><button>About Us</button></a>
             </li>
             <li>
-              <a href="https://www.beyondmenu.com/20070/chicago/house-of-hunan-chicago-60614.aspx?utm_source=satellite&utm_medium=home_order&pk_vid=446aae97154b03021610492576aa0265"><button>Order Online</button></a>
+              <a href="https://www.beyondmenu.com/20070/chicago/house-of-hunan-chicago-60614.aspx?utm_source=satellite&utm_medium=home_order&pk_vid=446aae97154b03021610492576aa0265" target="_blank" rel='noreferrer'><button>Order Online</button></a>
             </li>
           </ul>
 
